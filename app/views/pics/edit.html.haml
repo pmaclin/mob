@@ -4,9 +4,8 @@
       .panel-heading
         %h1 Edit Your Brew Review
       .panel-body
+        .current_image
+          %strong.center Edit This Image
+          = image_tag @pic.image.url(:medium)
+
         = render 'form'
-
-
-=# link_to "Cancel", pic_path
-
-
